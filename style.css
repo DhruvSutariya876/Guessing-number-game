@@ -8,6 +8,8 @@ body {
     margin: 0;
 }
 
+
+
 #homepage, #guesspage {
     display: flex;
     flex-direction: column;
