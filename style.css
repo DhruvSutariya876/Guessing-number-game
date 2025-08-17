@@ -1,0 +1,106 @@
+body {
+    background: linear-gradient(135deg, #ffd3a5, #fd6585);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#homepage {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+#guesspage {
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #4b1d3f;
+    font-size: 3rem;
+    font-family: 'Bitcount Single', sans-serif;
+    font-weight: 500;
+}
+
+input[type="number"] {
+    color: #333;
+    padding: 0.5rem;
+    width: 400px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.8);
+    outline: none;
+}
+
+input:focus {
+    border-color: #2193b0;
+    box-shadow: 0 0 5px rgba(33, 147, 176, 0.5);
+    outline: none;
+}
+
+input::placeholder {
+    color: #f10736;
+    font-weight: 500;
+}
+
+.btns {
+    margin-top: 30px;
+    margin-right: 15px;
+    width: 25%;
+    padding: 7px;
+    color: #cfd9df;
+    background: linear-gradient(135deg, #d4145a, #fbb03b);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btns:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+#result{
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.guessed:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #136496, #111416);
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    form {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    input[type="number"] {
+        font-size: 14px;
+        padding: 10px;
+        width: 15em;
+    }
+
+    #btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .guessed {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
